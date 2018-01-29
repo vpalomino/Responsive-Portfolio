@@ -1,0 +1,256 @@
+body { 
+background-image: url('../images/3201.jpg'); 
+
+}
+
+
+.container {
+width: 960px;
+overflow: auto;
+margin: auto;
+height: 800px;
+
+}
+
+
+
+header {
+    top: 0px;
+    height: 60px;
+    background-color: white;
+    font-family: Georgia;
+    border-bottom: 3px solid grey;
+
+}
+
+.about-me {
+    float: left; 
+    width: 650px;
+    margin-top: 20px;
+    background-color: white; 
+    font-family: Georgia; 
+
+    
+}
+
+.about-me-content {
+    margin: 20px 20px;
+}
+
+
+
+.main-content::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+.connect-me { 
+    float: right;
+    width: 270px;
+    margin-top: 20px;
+    background-color: white; 
+    font-family: Georgia; 
+    
+}
+
+.connect-me-content {
+    margin: 20px 20px;
+}
+
+.iconcontainer {
+    text-align: center;
+}
+
+  .social-media-icon { 
+    width: 60px;
+    height: 60px;
+
+  }
+
+/* Portfolio Page */
+ .portfolio {
+    float: left; 
+    width: 650px;
+    margin-top: 20px;
+    background-color: white; 
+    font-family: Georgia; 
+}  
+
+.portfolio-links {
+    padding: 10px;
+    margin: 10px;
+}
+
+.portfolio-links a {
+    position: relative;
+    display: inline-block;
+    height: 180px;
+    width: 240px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.portfolio-links img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.portfolio-links .banner {
+    position: absolute; 
+    width: 100%;
+    height: 40px; 
+    background-color: #4aaaaf;
+    text-align: center; 
+    color: white; 
+    bottom: 5px; 
+
+}
+/*End of Portfolio Page */ 
+
+/* Contact Page */ 
+.message-me {
+    margin-top: 20px; 
+    float: left; 
+    width: 450px;
+    background-color: white; 
+    font-family: Georgia; 
+}
+
+.message-me-content {
+    margin: 10px;
+}  
+/*End of Contact Page */
+
+ a {
+    text-decoration: none;
+    color: #777777;  
+ }
+
+p {
+    font-family: Arial;
+    color: #777777;
+ }
+
+h1, h3 {
+    font-weight: bold;
+    color: #4aaaaf;
+    font-size: 25px;
+ } 
+
+ 
+ h2 {
+    background-color: #4aaaaf;
+    width: 250px;
+    float: left;
+    padding: 0px;
+    color: white;
+    text-align: center;
+    margin: 0px; 
+    font-weight: bold;
+    font-size: 30px; 
+    position: absolute;
+ }
+
+ li {
+    list-style-type: none;
+    display: inline-block; 
+    top: 5px;   width: 100px;
+    font-size: 16px; 
+    padding: 20px 0;
+    font-family: Arial; 
+
+ }
+
+ ul {
+    float: right;
+ }
+
+  footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin: 0 auto;
+    background-color: #666666;
+    border-top: 6px solid #4aaaaf;
+    text-align: center; 
+    color: #777777; 
+    padding: 30px; 
+
+}
+
+#profilepic {
+    margin-right: 10px; 
+    margin-bottom: 10px;
+    margin-left: 10px; 
+}
+
+
+@media only screen and (max-width: 960px;) {
+    .portfolio {
+        width: 100%;
+    }
+    
+    .connect-me {
+        width: 100%;
+    }        
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        margin-bottom: 150px;
+    } /*Need to figure out why the bottom of 
+    .connect-me cuts off in the portfolio page 
+    even with body{margin-bottom}*/
+
+    h1, h3 {
+        text-align: center; 
+    }
+
+     header, .container, .portfolio, .connect-me {
+        width: 100%; 
+    }
+
+    .about-me {
+        width: 100%;
+    }
+
+    .message-me {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 640px;) {
+    body {
+        margin-bottom: 150px;
+    } /*Need to figure out why the bottom of 
+    .connect-me cuts off in the portfolio page 
+    even with body{margin-bottom}*/
+
+     h1, h3 {
+        text-align: center; 
+    }
+
+    .container, .portfolio, .connect-me {
+        width: 100%; 
+    }
+
+    .about-me {
+        width: 100%;
+    }
+
+    .message-me {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+        position: static; 
+    }
+
+
+
+}
